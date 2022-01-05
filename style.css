@@ -1,0 +1,408 @@
+::selection {
+    background: #b7bf9648;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+
+    background: #011B10;
+}
+
+#container{
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    overflow: hidden;
+}
+
+.acc{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+    background: #011B10;
+    color: #E4DEAE;
+
+    transition: 1.5s;
+}
+
+.accCache{
+    transform: translateY(-150%);
+}
+
+#acc1{
+    z-index: 30;
+}
+
+body #fleche{
+    margin-top: 3px;
+
+    transform: translateY(80px);
+    opacity: 0;
+    transition: 0.8s;
+    transition-delay: 0.8s;
+
+    cursor: pointer;
+}
+
+#fleche:hover{
+    animation: flecheAnim 0.7s linear infinite;
+}
+
+@keyframes flecheAnim {
+    0%{
+        transform: translateY(0);
+    }
+
+    20%{
+        transform: translateY(3px);
+    }
+
+    80%{
+        transform: translateY(-3px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+/* PAGE 1 DE L'ACCUEIL*/
+
+
+
+
+.musique{
+    position: absolute;
+    top: 30px;
+    left: 40px;
+
+    cursor: pointer;
+
+    z-index: 30;
+}
+
+#musique1{
+    transform: translateX(7px);
+}
+
+#titre{
+    z-index: 32;
+    font-size: 35px;
+
+    transform: translateY(-50px);
+}
+
+#titreligne2{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.titrebloc{
+    margin: 0 auto;
+
+    position: relative;
+    width: fit-content;
+    
+    overflow: hidden;
+}
+
+body .titrebloc div{
+    transition: 0.8s;
+    transform: translateY(60px);
+    opacity: 0;
+}
+
+.bodyCharge .titrebloc div{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.titrebloc:nth-child(2) div {transition-delay: 0.4s;}
+
+#arbre{
+    position: absolute;
+    width: fit-content;
+
+    transform: translateY(-65px);
+
+    z-index: 31;
+}
+
+#flechebloc{
+    bottom: 60px;
+
+    position: absolute;
+    width: 100px;
+    height: 80px;
+
+    z-index: 31;
+    
+    overflow: hidden;
+}
+
+.bodyCharge #fleche{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+
+/* PAGE 2 DE L'ACCUEIL*/
+
+
+
+
+#acc2{
+    z-index: 29;
+    
+    width: 100%;
+}
+
+body #fleche2{
+    margin-top: 3px;
+
+    transform: translateY(80px);
+    opacity: 0;
+    transition: 0.8s;
+    transition-delay: 2.5s;
+
+    cursor: pointer;
+}
+
+.bodyCharge2 #fleche2{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.contenuPage2{
+    transform: translateY(-80px);
+    font-size: 26px;
+}
+
+.ligneP2{
+    margin: 0 auto;
+
+    display: flex;
+
+    gap: 30px;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+body #texte{
+    transform: translateY(120px);
+    opacity: 0;
+
+    transition: 1.2s;
+}
+
+.bodyCharge2 #texte{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.ligneP2:nth-child(1) #texte {transition-delay: 0.7s;}
+.ligneP2:nth-child(2) #texte {transition-delay: 1.3s;}
+.ligneP2:nth-child(3) #texte {transition-delay: 1.9s;}
+
+body #arbresvg2{
+    opacity: 0;
+    transform: translateY(50px);
+
+    transition: 1.2s;
+    transition-delay: 0.7s;
+}
+
+.bodyCharge2 #arbresvg2{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body .boutonRondExemple{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background: #173a1f;
+
+    opacity: 0;
+    transform: translateY(80px);
+}
+
+.bodyCharge2 .boutonRondExemple{
+    transition: 1.2s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.boutonRondExemple:nth-child(1) {transition-delay: 1.3s;}
+.boutonRondExemple:nth-child(2) {transition-delay: 1.9s;}
+
+#flechedroitesvg{
+    transform: translateX(4px) rotate(-90deg);
+}
+
+#flechegauchesvg{
+    transform: rotate(90deg) translateY(4px);
+}
+
+#casque{
+    transform: translateY(-3px);
+}
+
+#flechebloc2{
+    bottom: 60px;
+
+    position: absolute;
+    width: 100px;
+    height: 80px;
+
+    z-index: 29;
+    
+    overflow: hidden;
+}
+
+#fleche2:hover{
+    animation: flecheAnim 0.7s linear infinite;
+}
+
+
+
+
+/* Recueil de poèmes */
+
+
+
+
+.contenu{
+    text-align: center;
+
+    color: #E4DEAE;
+}
+
+.taille1{
+    font-size: 30px;
+}
+
+.taille2{
+    font-size: 25px;
+}
+
+.taille3{
+    font-size: 20px;
+}
+
+.poeme{
+    margin: 0;
+    position: absolute;
+
+    max-width: 600px;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.texte{
+    line-height: 1.5;
+}
+
+.taille1 .titrePoeme{
+    font-size: 40px;
+    font-weight: bold;
+    color: #278039;
+}
+
+.taille2 .titrePoeme{
+    font-size: 35px;
+    font-weight: bold;
+    color: #278039;
+}
+
+.taille3 .titrePoeme{
+    font-size: 30px;
+    font-weight: bold;
+    color: #278039;
+}
+
+.boutonsDroiteGauche{
+    overflow: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 80%;
+
+    pointer-events: none;
+
+    z-index: 1;
+}
+
+.boutonsDroiteGaucheContainer{
+    width: 100%;
+    height: 100%;
+    transition: 0.8s;
+    transition-delay: 0.7s;
+}
+
+body .boutonRond{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+
+    background: #133A1B;
+
+    transition: 0.3s;
+    transition-delay: 0;
+
+    opacity: 0.5;
+
+    pointer-events: all;
+
+    cursor: pointer;
+}
+
+.boutonRond:hover{
+    opacity: 1;
+}
+
+.titreBouton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
