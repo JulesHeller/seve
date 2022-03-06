@@ -12,6 +12,20 @@
     transform: translate(0);
 }
 
+.contenuPage2 {
+    font-size: 15px;  
+    transform: translateY(-40px);  
+}
+
+.boutonRondExemple {
+    width: 60px !important;
+    height: 60px !important;
+}
+
+.boutonRondExemple svg {
+    width: 40px;
+}
+
 .poeme {
     font-size: unset;
 
