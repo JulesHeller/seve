@@ -1,0 +1,40 @@
+.musique svg {
+    height: 40px;
+    
+}
+
+.musique {
+    top: 10px;
+    left: 10px;
+}
+
+.musique1 {
+    transform: translate(0);
+}
+
+.poeme {
+    font-size: unset;
+
+    max-width: unset;
+    width: 90%;
+
+    font-size: 15px;
+
+    transform: translate(-50%, -57%);
+}
+
+#p1 {
+    font-size: 14px;
+}
+
+.titrePoeme {
+    font-size: 22px !important;
+}
+
+.boutonsDroiteGauche {
+    top: unset;
+    bottom: 30px;
+    transform: translateX(-50%);
+
+    height: fit-content;
+}

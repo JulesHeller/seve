@@ -2,16 +2,19 @@
     background: #b7bf9648;
 }
 
-body{
+body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
 
     background: #011B10;
+
+    max-height: 100vh;
+    overflow: hidden;
 }
 
-#container{
+#container {
     position: absolute;
-    
+
     top: 0;
     bottom: 0;
     left: 0;
@@ -20,7 +23,7 @@ body{
     overflow: hidden;
 }
 
-.acc{
+.acc {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -31,22 +34,22 @@ body{
     bottom: 0;
     right: 0;
     left: 0;
-    
+
     background: #011B10;
     color: #E4DEAE;
 
     transition: 1.5s;
 }
 
-.accCache{
+.accCache {
     transform: translateY(-150%);
 }
 
-#acc1{
+#acc1 {
     z-index: 30;
 }
 
-body #fleche{
+body #fleche {
     margin-top: 3px;
 
     transform: translateY(80px);
@@ -57,24 +60,24 @@ body #fleche{
     cursor: pointer;
 }
 
-#fleche:hover{
+#fleche:hover {
     animation: flecheAnim 0.7s linear infinite;
 }
 
 @keyframes flecheAnim {
-    0%{
+    0% {
         transform: translateY(0);
     }
 
-    20%{
+    20% {
         transform: translateY(3px);
     }
 
-    80%{
+    80% {
         transform: translateY(-3px);
     }
 
-    100%{
+    100% {
         transform: translateY(0);
     }
 }
@@ -87,7 +90,7 @@ body #fleche{
 
 
 
-.musique{
+.musique {
     position: absolute;
     top: 30px;
     left: 40px;
@@ -97,45 +100,47 @@ body #fleche{
     z-index: 30;
 }
 
-#musique1{
+#musique1 {
     transform: translateX(7px);
 }
 
-#titre{
+#titre {
     z-index: 32;
     font-size: 35px;
 
     transform: translateY(-50px);
 }
 
-#titreligne2{
+#titreligne2 {
     font-size: 50px;
     font-weight: bold;
 }
 
-.titrebloc{
+.titrebloc {
     margin: 0 auto;
 
     position: relative;
     width: fit-content;
-    
+
     overflow: hidden;
 }
 
-body .titrebloc div{
+body .titrebloc div {
     transition: 0.8s;
     transform: translateY(60px);
     opacity: 0;
 }
 
-.bodyCharge .titrebloc div{
+.bodyCharge .titrebloc div {
     transform: translateY(0);
     opacity: 1;
 }
 
-.titrebloc:nth-child(2) div {transition-delay: 0.4s;}
+.titrebloc:nth-child(2) div {
+    transition-delay: 0.4s;
+}
 
-#arbre{
+#arbre {
     position: absolute;
     width: fit-content;
 
@@ -144,7 +149,7 @@ body .titrebloc div{
     z-index: 31;
 }
 
-#flechebloc{
+#flechebloc {
     bottom: 60px;
 
     position: absolute;
@@ -152,11 +157,11 @@ body .titrebloc div{
     height: 80px;
 
     z-index: 31;
-    
+
     overflow: hidden;
 }
 
-.bodyCharge #fleche{
+.bodyCharge #fleche {
     transform: translateY(0);
     opacity: 1;
 }
@@ -169,13 +174,13 @@ body .titrebloc div{
 
 
 
-#acc2{
+#acc2 {
     z-index: 29;
-    
+
     width: 100%;
 }
 
-body #fleche2{
+body #fleche2 {
     margin-top: 3px;
 
     transform: translateY(80px);
@@ -186,17 +191,17 @@ body #fleche2{
     cursor: pointer;
 }
 
-.bodyCharge2 #fleche2{
+.bodyCharge2 #fleche2 {
     transform: translateY(0);
     opacity: 1;
 }
 
-.contenuPage2{
+.contenuPage2 {
     transform: translateY(-80px);
     font-size: 26px;
 }
 
-.ligneP2{
+.ligneP2 {
     margin: 0 auto;
 
     display: flex;
@@ -207,23 +212,31 @@ body #fleche2{
     overflow: hidden;
 }
 
-body #texte{
+body #texte {
     transform: translateY(120px);
     opacity: 0;
 
     transition: 1.2s;
 }
 
-.bodyCharge2 #texte{
+.bodyCharge2 #texte {
     transform: translateY(0);
     opacity: 1;
 }
 
-.ligneP2:nth-child(1) #texte {transition-delay: 0.7s;}
-.ligneP2:nth-child(2) #texte {transition-delay: 1.3s;}
-.ligneP2:nth-child(3) #texte {transition-delay: 1.9s;}
+.ligneP2:nth-child(1) #texte {
+    transition-delay: 0.7s;
+}
 
-body #arbresvg2{
+.ligneP2:nth-child(2) #texte {
+    transition-delay: 1.3s;
+}
+
+.ligneP2:nth-child(3) #texte {
+    transition-delay: 1.9s;
+}
+
+body #arbresvg2 {
     opacity: 0;
     transform: translateY(50px);
 
@@ -231,12 +244,12 @@ body #arbresvg2{
     transition-delay: 0.7s;
 }
 
-.bodyCharge2 #arbresvg2{
+.bodyCharge2 #arbresvg2 {
     opacity: 1;
     transform: translateY(0);
 }
 
-body .boutonRondExemple{
+body .boutonRondExemple {
     display: flex;
 
     justify-content: center;
@@ -252,28 +265,33 @@ body .boutonRondExemple{
     transform: translateY(80px);
 }
 
-.bodyCharge2 .boutonRondExemple{
+.bodyCharge2 .boutonRondExemple {
     transition: 1.2s;
     opacity: 1;
     transform: translateY(0);
 }
 
-.boutonRondExemple:nth-child(1) {transition-delay: 1.3s;}
-.boutonRondExemple:nth-child(2) {transition-delay: 1.9s;}
+.boutonRondExemple:nth-child(1) {
+    transition-delay: 1.3s;
+}
 
-#flechedroitesvg{
+.boutonRondExemple:nth-child(2) {
+    transition-delay: 1.9s;
+}
+
+#flechedroitesvg {
     transform: translateX(4px) rotate(-90deg);
 }
 
-#flechegauchesvg{
+#flechegauchesvg {
     transform: rotate(90deg) translateY(4px);
 }
 
-#casque{
+#casque {
     transform: translateY(-3px);
 }
 
-#flechebloc2{
+#flechebloc2 {
     bottom: 60px;
 
     position: absolute;
@@ -281,11 +299,11 @@ body .boutonRondExemple{
     height: 80px;
 
     z-index: 29;
-    
+
     overflow: hidden;
 }
 
-#fleche2:hover{
+#fleche2:hover {
     animation: flecheAnim 0.7s linear infinite;
 }
 
@@ -297,25 +315,25 @@ body .boutonRondExemple{
 
 
 
-.contenu{
+.contenu {
     text-align: center;
 
     color: #E4DEAE;
 }
 
-.taille1{
+.taille1 {
     font-size: 30px;
 }
 
-.taille2{
+.taille2 {
     font-size: 25px;
 }
 
-.taille3{
+.taille3 {
     font-size: 20px;
 }
 
-.poeme{
+.poeme {
     margin: 0;
     position: absolute;
 
@@ -327,29 +345,29 @@ body .boutonRondExemple{
     transform: translate(-50%, -50%);
 }
 
-.texte{
+.texte {
     line-height: 1.5;
 }
 
-.taille1 .titrePoeme{
+.taille1 .titrePoeme {
     font-size: 40px;
     font-weight: bold;
     color: #278039;
 }
 
-.taille2 .titrePoeme{
+.taille2 .titrePoeme {
     font-size: 35px;
     font-weight: bold;
     color: #278039;
 }
 
-.taille3 .titrePoeme{
+.taille3 .titrePoeme {
     font-size: 30px;
     font-weight: bold;
     color: #278039;
 }
 
-.boutonsDroiteGauche{
+.boutonsDroiteGauche {
     overflow: hidden;
 
     position: absolute;
@@ -367,14 +385,14 @@ body .boutonRondExemple{
     z-index: 1;
 }
 
-.boutonsDroiteGaucheContainer{
+.boutonsDroiteGaucheContainer {
     width: 100%;
     height: 100%;
     transition: 0.8s;
     transition-delay: 0.7s;
 }
 
-body .boutonRond{
+body .boutonRond {
     display: flex;
 
     justify-content: center;
@@ -396,11 +414,11 @@ body .boutonRond{
     cursor: pointer;
 }
 
-.boutonRond:hover{
+.boutonRond:hover {
     opacity: 1;
 }
 
-.titreBouton{
+.titreBouton {
     display: flex;
     align-items: center;
     justify-content: center;
